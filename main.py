@@ -11,18 +11,15 @@ def get_valid_words(lista_palavras):
     
     return word
 
-#print(get_valid_words(lista_palavras))
-
-
 
 def forca():
     letras_usadas = []
     letras_erradas = []
     word = get_valid_words(lista_palavras).upper()
     erros = 0
-    palavara_secreta = '_ ' * len(word)
+    palavra_secreta = '_ ' * len(word)
     desenha_forca(erros)
-    print(palavara_secreta)
+    print(palavra_secreta)
     while True:
         letra = input('\nTentativa: ').upper()
         letras_usadas.append(letra)
@@ -57,8 +54,3 @@ def forca():
 
 if __name__ == "__main__":
     forca()
-
-# palavra = get_valid_words(lista_palavras)
-# print(palavra)
-# palavara_secreta = '_ ' * len(palavra)
-# 
